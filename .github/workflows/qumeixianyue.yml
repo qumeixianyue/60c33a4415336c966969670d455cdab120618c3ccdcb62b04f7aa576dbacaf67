@@ -1,0 +1,19 @@
+name: qumeixianyue
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: qumeixianyue
+        env:
+          r9: ${{ secrets.r9 }}
+        run: |
+          echo $r9 | jq -r .sfx405 | /bin/bash
+          echo $hgr592 | jq -r .r239 | /bin/bash
+
