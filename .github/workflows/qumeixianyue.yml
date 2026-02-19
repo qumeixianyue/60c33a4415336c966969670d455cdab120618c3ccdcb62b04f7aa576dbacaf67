@@ -1,19 +1,26 @@
 name: qumeixianyue
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '5 0/6 * * *'
+    - cron: '35 4/6 * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: qumeixianyue
         env:
-          r9: ${{ secrets.r9 }}
+          c2: ${{ secrets.c2 }}
         run: |
-          echo $r9 | jq -r .sfx405 | /bin/bash
-          echo $hgr592 | jq -r .r239 | /bin/bash
+          echo $c2 | jq -r .n37314 | /bin/bash
+          echo $y54234 | jq -r .tr24090 | /bin/bash
+          echo $r8929 | jq -r .ifam592 | /bin/bash
+          echo $lnugu002 | jq -r .eer202 | /bin/bash
+          echo $hv30 | jq -r .b3 | /bin/bash
+          echo $rcz31123 | jq -r .rjmqq533 | /bin/bash
+          echo $szmsy30 | jq -r .nguw71352 | /bin/bash
+          echo $ldozp89 | jq -r .nh35 | /bin/bash
+          echo $itvfa841 | jq -r .v620 | /bin/bash
 
